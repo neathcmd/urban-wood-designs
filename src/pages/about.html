@@ -5,17 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<<<<<<< HEAD
-
-    <script src="../scripts/header.js"></script>
-
+    <link rel="stylesheet" href="../styles/about.css" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-=======
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
->>>>>>> main
     <!-- fontfamily -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -33,7 +25,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <nav class="z-auto bg-white-600 p-0 bg-gray-200">
       <div class="px-6 mx-auto flex justify-between items-center bg-gray-200">
         <a href="/index.html" class="text-white text-2xl font-bold">
@@ -42,13 +34,12 @@
 
         <ul class="hidden md:flex space-x-6">
           <li>
-<<<<<<< HEAD
             <a
               href="/team1-Furniture-company/index.html"
               class="text-amber-900 hover:text-blue-900"
-=======
-            <a href="./index.html" class="text-amber-900 hover:text-blue-900"
->>>>>>> main
+              <a
+              href="./index.html"
+              class="text-amber-900 hover:text-blue-900"
               >Home</a
             >
           </li>
@@ -129,22 +120,26 @@
               >Contact</a
             >
           </li>
+          <!-- icon -->
           <li>
             <a href="#" id="search-icon">
               <i
-                class="fa-solid fa-magnifying-glass text-amber-900 hover:text-blue-900"
+                class="fa-solid fa-magnifying-glass text-amber-900 hover:text-blue-900 transition-colors duration-300"
               ></i>
             </a>
           </li>
-          <li>
-            <a href="#"
-              ><i
-                class="fa-regular fa-user text-amber-900 hover:text-blue-900"
+          <l>
+            <a href="#" id="userIcon">
+              <i
+                class="fa-regular fa-user text-amber-900 hover:text-blue-900 transition-colors duration-300"
               ></i>
             </a>
-          </li>
+          </l>
           <li>
-            <a href="#" class="text-amber-900">
+            <a
+              href="#"
+              class="text-amber-900 hover:text-blue-900 transition-colors duration-300"
+            >
               <i class="fa-solid fa-cart-shopping"></i>
             </a>
           </li>
@@ -183,7 +178,6 @@
         id="mobile-menu"
         class="hidden md:hidden bg-blue-700 text-white text-center space-y-2 p-4"
       >
-<<<<<<< HEAD
         <li>
           <a href="/team1-Furniture-company/index.html" class="block py-2"
             >Home</a
@@ -238,9 +232,9 @@
         <li></li>
         <li><a href="../pages/blog.html" class="block py-2">Blog</a></li>
         <li><a href="../pages/contact.html" class="block py-2">Contact</a></li>
-=======
+        =======
         <!-- Your mobile menu items -->
->>>>>>> main
+        >>>>>>> main
       </ul>
     </nav>
 
@@ -469,10 +463,10 @@
     <div class="max-w-7xl mx-auto p-8">
       <div class="grid md:grid-cols-2 gap-12">
         <!-- left side - Content -->
-        <div data-aos="fade-right">
+        <div>
           <div class="mb-12">
             <h2 class="text-black mb-2">What we've done?</h2>
-            <h1 class="text-4xl font-bold mb-6 tetx-black">
+            <h1 class="text-4xl font-bold mb-6 text-black">
               Our <span class="text-amber-700">History</span>
             </h1>
             <p class="text-black leading-relaxed">
@@ -491,29 +485,23 @@
               data-label="Clients Satisfaction"
               data-percentage="97"
               data-delay="100"
-              data-aos="zoom-in-up"
-              data-aos-delay="200"
             ></div>
             <div
               class="progress-bar"
               data-label="Furniture Repairment"
               data-percentage="94"
               data-delay="300"
-              data-aos="zoom-in-up"
-              data-aos-delay="300"
             ></div>
             <div
               class="progress-bar"
               data-label="Diamond Certificates"
               data-percentage="92"
               data-delay="500"
-              data-aos="zoom-in-up"
-              data-aos-delay="400"
             ></div>
           </div>
         </div>
-        <!-- right side - Image and Video Button -->
-        <div data-aos="fade-left" class="relative">
+        <!-- right side - Image -->
+        <div class="relative">
           <img
             src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/img3.jpg"
             alt="Interior space"
@@ -538,11 +526,7 @@
               <div class="flex items-center justify-center">
                 <div>
                   <img
-<<<<<<< HEAD
-                    src="../assets/Logo.png"
-=======
-                    src="./src/assets/Logo.png"
->>>>>>> main
+                    src="../assets/logo.png"
                     alt="logo"
                     class="w-[5rem] h-[5rem] cursor-pointer"
                   />
@@ -583,7 +567,7 @@
               <input
                 type="email"
                 placeholder="Email..."
-                class="flex-grow p-2 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                class="flex-grow p-2 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 placeholder-gray-500 placeholder-font-extrabold"
               />
               <button
                 class="border border-amber-700 text-white p-2 px-4 hover:bg-amber-800 transition-colors"
@@ -606,7 +590,7 @@
             ©2025 UrbanWood Designs. All rights reserved.
           </p>
 
-          <div class="flex space-x-6">
+          <div class="flex gap-[1.4em]">
             <a href="#" class="text-gray-600 hover:text-gray-900">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -640,11 +624,9 @@
       </div>
     </div>
 
-<<<<<<< HEAD
     <script src="../scripts/menu.js"></script>
-=======
+
     <script src="../scripts/about.js"></script>
->>>>>>> main
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
