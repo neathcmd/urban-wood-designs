@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blog</title>
+    <title>Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- fontfamily -->
     <link
@@ -21,6 +21,8 @@
         font-family: "Poppins", sans-serif;
       }
     </style>
+    <script src="../scripts/scroll.js"></script>
+    <link rel="stylesheet" href="../styles/product.css" />
   </head>
   <body>
     <nav class="z-auto bg-white-600 p-0">
@@ -101,11 +103,7 @@
             </ul>
           </li>
           <li>
-            <a
-              href="../pages/blog.html"
-              class="text-amber-900 hover:text-blue-900"
-              >Blog</a
-            >
+            <a href="#" class="text-amber-900 hover:text-blue-900">Blog</a>
           </li>
           <li>
             <a
@@ -198,66 +196,107 @@
         </li>
 
         <li></li>
-        <li><a href="../pages/blog.html" class="block py-2">Blog</a></li>
+        <li><a href="#" class="block py-2">Blog</a></li>
         <li><a href="../pages/contact.html" class="block py-2">Contact</a></li>
       </ul>
     </nav>
-    <section
-      class="bg-cover bg-center h-[90vh] flex items-center justify-center w-[95vw] mx-auto mt-6 rounded-[50px] bounce"
-      style="background-image: url('../assets/blog-2.jpg')"
-    >
-      <div class="text-center">
-        <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to our shop</h1>
-        <p class="text-xl md:text-2xl mb-6">
-          Here some information about our product
+    <h2 class="text-4xl font-bold text-amber-900 mt-4">
+      Furniture <span>Blog</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 items-center px-6 mt-6">
+      <div class="scroll-slide">
+        <img
+          src="../assets/blog 1.jpg"
+          alt="Example Image"
+          class="w-full rounded-lg shadow-lg hover:brightness-75 transition duration-300"
+        />
+      </div>
+
+      <div class="text-center md:text-left px-6 scroll-slide">
+        <h2 class="text-4xl font-bold text-amber-900">Office Lounge</h2>
+        <p class="mt-4 text-lg text-gray-600">5 Feb 2025</p>
+        <p class="mt-4 text-lg text-gray-600">
+          Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec
+          sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta
+          dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
+          accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum
+          id orci porta dapibus. 
         </p>
         <a
-          href="#"
-          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300"
-          >Get Started</a
+          href="../pages/blog-readmore.html"
+          class="mt-6 inline-block px-6 py-3 bg-amber-900 text-white rounded-lg hover:bg-blue-700"
+          >Read More</a
         >
       </div>
-    </section>
-    <div class="ms-6 mt-6">
-      <h1 class="text-2xl md:text-5xl font-bold mb-4 ms-6">
-        Much space in world
-      </h1>
-      <small class="ms-6">5 Feb 2025</small>
-      <p class="ms-6 text-1.5xl">
-        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec
-        sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta
-        dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
-        accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum id
-        orci porta dapibus. Donec rutrum congue leo eget malesuada. Donec
-        sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.
-      </p>
     </div>
-    <div class="w-[400px] h-[80px] bg-gray-300 mx-auto mt-6 rounded-lg">
-      <p class="ms-6 text-1.5xl text-center">
-        Pellentesque in ipsum id orci porta dapibus. Pellentesque in ipsum id
-        orci porta dapibus. Nulla porttitor accumsan tincidunt.
-      </p>
-    </div>
-    <br /><br />
-    <p class="ms-10 text-1.5xl">
-      In the beautiful surroundings of Upcote Farm in Cheltenham, 2000 Trees
-      festival is a gem of a find if you’ve been lucky enough…I found this
-      festival in 2008 when ‘Reuben’ were due to headline, but even though they
-      disbanded a few weeks prior to the festival, us fans still decided to turn
-      up, and boy am I glad I did… Being a small sized 5000 capacity festival,
-      but not enough to have 20 minute waits at the bars and toilets. The
-      balance between atmosphere and accessibility is second to none. The food
-      stalls are all hand picked, the same with the local ciders/ales and beers,
-      the organisers have really nailed it on the head, you can tell they
-      themselves are, as well as bringing in some big names, it really does
-      cater for every type music fan.
-    </p>
+
     <div
-      class="bg-url('../assets/footer-bg.jpg') bg-cover bg-center min-h-screen flex flex-col"
+      class="grid md:grid-cols-2 items-hover:brightness-75 transition duration-300center px-6 mt-6"
+    >
+      <div class="scroll-slide">
+        <img
+          src="../assets/blog-2.jpg"
+          alt="Example Image"
+          class="w-full rounded-lg shadow-lg hover:brightness-75 transition duration-300"
+        />
+      </div>
+
+      <div class="text-center md:text-left px-6 scroll-slide">
+        <h2 class="text-4xl font-bold text-amber-900">Much Space</h2>
+        <p class="mt-4 text-lg text-gray-600">5 Feb 2025</p>
+        <p class="mt-4 text-lg text-gray-600">
+          Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec
+          sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta
+          dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
+          accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum
+          id orci porta dapibus. 
+        </p>
+        <a
+          href="../pages/blog-readmore.html"
+          class="mt-6 inline-block px-6 py-3 bg-amber-900 text-white rounded-lg hover:bg-blue-700"
+          >Read More</a
+        >
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 items-center px-6 mt-6">
+      <!-- Left: Image -->
+
+      <div class="scroll-slide">
+        <img
+          src="../assets/blog-3.png"
+          alt="Example Image"
+          class="w-full rounded-lg shadow-lg"
+        />
+      </div>
+
+      <!-- Right: Text Content -->
+      <div class="text-center md:text-left px-6 scroll-slide">
+        <h2 class="text-4xl font-bold text-amber-900">Healthy Bed</h2>
+        <p class="mt-4 text-lg text-gray-600">5 Feb 2025</p>
+        <p class="mt-4 text-lg text-gray-600">
+          Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec
+          sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta
+          dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
+          accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum
+          id orci porta dapibus. 
+        </p>
+        <a
+          href="../pages/blog-readmore.html"
+          class="mt-6 inline-block px-6 py-3 text-white rounded-lg hover:bg-blue-700 bg-amber-900"
+          >Read More</a
+        >
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="min-h-[10vh] flex flex-col border border-t-2 border-t-amber-600"
     >
       <div class="flex-grow bg-gradient-to-br from-gray-50 to-gray-200 p-8">
         <div
-          class="max-w-6xl mx-auto mt-[7em] flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0"
+          class="max-w-[85%] w-auto mx-auto my-[5em] flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0"
         >
           <!-- Left Section - remains the same -->
           <div class="space-y-4">
@@ -266,7 +305,7 @@
               <div class="flex items-center justify-center">
                 <div>
                   <img
-                    src="../assets/Logo.png"
+                    src="./src/assets/Logo.png"
                     alt="logo"
                     class="w-[5rem] h-[5rem] cursor-pointer"
                   />
@@ -307,12 +346,14 @@
               <input
                 type="email"
                 placeholder="Email..."
-                class="flex-grow p-2 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                class="flex-grow p-2 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 placeholder-gray-500 placeholder-font-extrabold"
               />
               <button
-                class="bg-amber-700 text-white p-2 px-4 hover:bg-amber-800 transition-colors"
+                class="border border-amber-700 text-white p-2 px-4 hover:bg-amber-800 transition-colors"
               >
-                <i class="fa-solid fa-envelope"></i>
+                <i
+                  class="fa-regular fa-envelope text-amber-700 hover:text-white"
+                ></i>
               </button>
             </div>
           </div>
@@ -328,7 +369,7 @@
             ©2025 UrbanWood Designs. All rights reserved.
           </p>
 
-          <div class="flex space-x-6">
+          <div class="flex gap-[1.4em]">
             <a href="#" class="text-gray-600 hover:text-gray-900">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path

@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
+    <title>UrbanWood Designs</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- fontfamily -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -15,25 +17,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
-    <script src="../scripts/scroll.js"></script>
-    <link rel="stylesheet" href="../styles/product.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- header -->
     <nav class="z-auto bg-white-600 p-0 bg-gray-200">
       <div
         class="px-6 mx-auto flex justify-between items-center max-w-[98%] w-auto"
       >
         <a href="./index.html" class="text-white text-2xl font-bold">
-          <img src="./src/assets/Logo.png" alt="Logo" class="h-[50px] my-2" />
+          <img src="../assets/logo.png" alt="Logo" class="h-[50px] my-2" />
         </a>
 
         <ul class="hidden md:flex space-x-6">
@@ -426,417 +418,137 @@
       </ul>
     </nav>
 
-    <!-- content section -->
-    <section class="flex items-center justify-center flex-col">
-      <div class="text-start w-full">
-        <h1
-          class="text-5xl mt-8 font-bold hover:text-amber-200 text-amber-900 ms-6"
-        >
-          Table
-        </h1>
-        <p class="mt-4 ms-6">Here product all of Table</p>
+    <section class="my-[10em]">
+      <!-- Progress Steps -->
+      <div
+        class="max-w-3xl mx-auto mb-8 flex items-center justify-center gap-2 text-3xl"
+      >
+        <a href="#" class="progress-step current" data-step="cart">
+          <span class="text-gray-900 hover:text-amber-700 cursor-pointer"
+            >Shopping Cart</span
+          >
+        </a>
+        <span class="text-gray-400">→</span>
+        <a href="#" class="progress-step" data-step="checkout">
+          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
+            >Checkout Detail</span
+          >
+        </a>
+        <span class="text-gray-400">→</span>
+        <a href="#" class="progress-step" data-step="complete">
+          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
+            >Order complete</span
+          >
+        </a>
       </div>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[12em]">
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table1.jpg"
-                alt="Card Image"
-              />
-              <div class="flex-2 right-10 top-[40px] absolute text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+
+      <div class="max-w-3xl mx-auto flex flex-col lg:flex-row gap-6">
+        <!-- Cart Items -->
+        <div class="flex-grow space-y-4" id="cartItems">
+          <!-- Cart items will be dynamically populated -->
+        </div>
+
+        <!-- Cart Totals -->
+        <div class="w-full lg:w-72">
+          <div class="bg-white rounded-lg p-4 shadow">
+            <h3 class="text-lg font-medium mb-4">Cart totals</h3>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between">
+                <span>Subtotal</span>
+                <span id="subtotal">$0</span>
+              </div>
+              <div class="flex justify-between font-medium">
+                <span>Total</span>
+                <span id="total">$0</span>
               </div>
             </div>
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Occasional Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 430
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 310</p>
+            <button
+              class="w-full bg-amber-700 text-white py-3 rounded-lg mb-2 hover:bg-amber-900"
+              id="checkoutBtn"
+            >
+              Proceed to checkout
+            </button>
+            <button
+              class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
+              id="continueShoppingBtn"
+            >
+              Continue Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Steps -->
+      <div
+        class="max-w-3xl mx-auto mb-8 flex items-center justify-center gap-2 text-3xl"
+      >
+        <a href="#" class="progress-step current" data-step="cart">
+          <span class="text-gray-900 hover:text-amber-700 cursor-pointer"
+            >Shopping Cart</span
+          >
+        </a>
+        <span class="text-gray-400">→</span>
+        <a href="#" class="progress-step" data-step="checkout">
+          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
+            >Checkout Detail</span
+          >
+        </a>
+        <span class="text-gray-400">→</span>
+        <a href="#" class="progress-step" data-step="complete">
+          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
+            >Order complete</span
+          >
+        </a>
+      </div>
+
+      <!-- Cart Content -->
+      <div id="cartContent" class="max-w-3xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- Cart Items -->
+          <div class="flex-grow space-y-4" id="cartItems">
+            <!-- Cart items will be dynamically populated -->
+          </div>
+
+          <!-- Cart Totals -->
+          <div class="w-full lg:w-72">
+            <div class="bg-white rounded-lg p-4 shadow">
+              <h3 class="text-lg font-medium mb-4">Cart totals</h3>
+              <div class="space-y-2 mb-4">
+                <div class="flex justify-between">
+                  <span>Subtotal</span>
+                  <span id="subtotal">$0</span>
+                </div>
+                <div class="flex justify-between font-medium">
+                  <span>Total</span>
+                  <span id="total">$0</span>
+                </div>
               </div>
+              <button
+                class="w-full bg-amber-700 text-white py-3 rounded-lg mb-2 hover:bg-amber-900"
+                id="checkoutBtn"
+              >
+                Proceed to checkout
+              </button>
+              <button
+                class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
+                id="continueShoppingBtn"
+              >
+                Continue Shopping
+              </button>
             </div>
           </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table2.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Chair Side Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 415
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 305</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table3.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
+      <!-- Checkout Content -->
+      <div id="checkoutContent" class="max-w-3xl mx-auto hidden">
+        <!-- Checkout form and order summary -->
+      </div>
 
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Fabric Table</h2>
-
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 715
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 699</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table4.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Road End Table</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 510
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 431</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table5.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                 Rectangular Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 450
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 389</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table6.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Emily Flared</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 410
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 389</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table7.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                 Chairside End Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 450
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 390</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table8.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Cosy Table</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 430
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 396</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table9.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Lake House Table 
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 420</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table10.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                 Chairside Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 470
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 385</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table11.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Occasional Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 450
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 399</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table12.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Dockside Table 
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 470
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 388</p>
-              </div>
-            </div>
-          </div>
-        </a>
+      <!-- Order Complete Content -->
+      <div id="orderCompleteContent" class="max-w-3xl mx-auto hidden">
+        <h2 class="text-2xl font-medium mb-4">Order Complete</h2>
+        <p>Thank you for your purchase!</p>
       </div>
     </section>
 
@@ -855,7 +567,7 @@
               <div class="flex items-center justify-center">
                 <div>
                   <img
-                    src="./src/assets/Logo.png"
+                    src="../assets/logo.png"
                     alt="logo"
                     class="w-[5rem] h-[5rem] cursor-pointer"
                   />
@@ -952,6 +664,7 @@
         </div>
       </div>
     </div>
-    <script src="../scripts/menu.js"></script>
+
+    <script src="../scripts/cart.js"></script>
   </body>
 </html>
