@@ -28,3 +28,14 @@
 .accordion-body {
   animation: slideIn 0.3s ease-out;
 }
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 1rem; /* Adjust padding as needed */
+}
+
+.collapse-content.active {
+  padding: 1rem; /* Adjust padding as needed */
+}

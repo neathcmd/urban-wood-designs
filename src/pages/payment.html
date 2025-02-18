@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- output -->
+    <link rel="stylesheet" href="./src/styles/output.css" />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom animation CSS -->
+    <link rel="stylesheet" href="../styles/animation.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- appcss -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Cosy Sofa UI</title>
+  </head>
+  <body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="flex bg-white p-6 rounded-lg shadow-lg max-w-2xl">
+      <!-- Image Section -->
+      <div class="w-1/2">
+        <img
+          src="https://via.placeholder.com/250"
+          alt="Cosy Sofa"
+          class="rounded-lg"
+        />
+      </div>
+
+      <!-- Content Section -->
+      <div class="w-1/2 pl-6 flex flex-col justify-center">
+        <h2 class="text-2xl font-bold text-brown-700">Cosy Sofa</h2>
+        <div class="mt-2">
+          <span class="text-gray-500 line-through text-lg">$450</span>
+          <span class="text-lg font-semibold text-gray-900"> $399</span>
+        </div>
+        <p class="text-gray-600 text-sm mt-2">
+          Furniture refers to movable objects intended to support various human
+          activities such as seating, eating, and sleeping. Furniture is also
+          used to hold objects at a convenient height for work, or to store
+          things.
+        </p>
+        <button
+          class="mt-4 bg-brown-700 text-white py-2 px-4 rounded-lg hover:bg-brown-800"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/scripts/aos.js"></script>
+
+    <!-- app.js -->
+    <!-- <script src="./src/scripts/app.js"></script> -->
+  </body>
+</html>
