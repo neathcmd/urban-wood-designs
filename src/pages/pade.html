@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <!-- output -->
+     <link rel="stylesheet" href="../styles/output.css" />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom animation CSS -->
+    <link rel="stylesheet" href="../styles/animation.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="font-poppins">
+    <!-- FAQ Section -->
+    <section id="faq"  class="bg-gray-50 py-12 animate-fadeInUp flex flex-row justify-between items-center">
+      <div class="container mx-auto px-4" data-aos="slide-right">
+        <h2 class="text-3xl font-semibold text-center mb-8">FAQ</h2>
+
+        <!-- FAQ Items -->
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <div
+            class="border border-black rounded-lg overflow-hidden transition-transform hover:translate-x-2"
+          >
+            <button
+              class="w-full text-left p-4 bg-white hover:bg-gray-50 focus:outline-none"
+              onclick="toggleCollapse('collapse1')"
+            >
+              What materials are used to make this furniture, and how durable
+              are they?
+            </button>
+            <div id="collapse1" class="hidden p-4 bg-gray-100">
+              Our furniture is made from high-quality wood like oak, walnut, and
+              engineered wood, designed for durability and long-lasting use.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="border border-black rounded-lg overflow-hidden transition-transform hover:translate-x-2"
+          >
+            <button
+              class="w-full text-left p-4 bg-white hover:bg-gray-50 focus:outline-none"
+              onclick="toggleCollapse('collapse2')"
+            >
+              What does this furniture require assembly, and if so, is there an
+              instruction manual included?
+            </button>
+            <div id="collapse2" class="hidden p-4 bg-gray-100">
+              Some pieces come pre-assembled, while others require simple
+              assembly. Instructions are included, and video guides are
+              available.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="border border-black rounded-lg overflow-hidden transition-transform hover:translate-x-2"
+          >
+            <button
+              class="w-full text-left p-4 bg-white hover:bg-gray-50 focus:outline-none"
+              onclick="toggleCollapse('collapse3')"
+            >
+              What is your return policy if the furniture doesn’t fit my space
+              or expectations?
+            </button>
+            <div id="collapse3" class="hidden p-4 bg-gray-100">
+              We offer a 30-day return policy for unused items. Return shipping
+              fees may apply. Check our Returns & Refunds page for details.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="border border-black rounded-lg overflow-hidden transition-transform hover:translate-x-2"
+          >
+            <button
+              class="w-full text-left p-4 bg-white hover:bg-gray-50 focus:outline-none"
+              onclick="toggleCollapse('collapse4')"
+            >
+              Do you offer delivery and installation services, and how much do
+              they cost?
+            </button>
+            <div id="collapse4" class="hidden p-4 bg-gray-100">
+              Yes! Standard delivery is free for orders over $500. White-glove
+              delivery (includes setup) is available for an extra fee at
+              checkout.
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="form container mx-auto px-4" data-aos="slide-left">
+        <div><h2 class="text-3xl font-semibold text-center mb-8">Ask Us</h2></div>
+        <form class="bg-gray-300 p-8 rounded-lg shadow-lg">
+          <input
+            type="text"
+            placeholder="Your name"
+            class="form-input w-full py-4 px-6 rounded-lg border-2 border-gray-100 focus:outline-none  bg-gray-100"
+          />
+          <input
+            type="email"
+            placeholder="Your email"
+            class="form-input w-full py-4 px-6 rounded-lg border-2 border-gray-100 focus:outline-none  mt-4 bg-gray-100"
+          />
+          <textarea
+            placeholder="Your message"
+            class="form-textarea w-full py-4 px-6 rounded-lg border-2 border-gray-100 focus:outline-none  mt-4 bg-gray-100"
+          ></textarea
+        </form>
+        <div class="flex justify-end items-end">
+          <button
+          class="w-15% py-4 px-6 bg-amber-900 text-white rounded-lg mt-4 hover:bg-amber-800 focus:outline-none">Submit</button>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- JavaScript for Collapse Toggle -->
+    <script src="../scripts/app.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
