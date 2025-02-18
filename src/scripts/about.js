@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -10,18 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const hiddenElements = document.querySelectorAll(".scroll-slide");
   hiddenElements.forEach((el) => observer.observe(el));
-
-// const menuBtn = document.getElementById("menu-btn");
-// const mobileMenu = document.getElementById("mobile-menu");
-
-
-// const menuBtn = document.getElementById("menu-btn");
-// const mobileMenu = document.getElementById("mobile-menu");
-
-
-// menuBtn.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("hidden");
-// });
+});
 
 class ProgressBar {
   constructor(element) {
@@ -52,12 +40,12 @@ class ProgressBar {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            this.element.classList.add('visible');
+            this.element.classList.add("visible");
             setTimeout(() => {
               this.animateProgress();
             }, this.delay);
           } else {
-            this.element.classList.remove('visible');
+            this.element.classList.remove("visible");
             this.resetProgress();
           }
         });
@@ -104,8 +92,8 @@ class ProgressBar {
 }
 
 // Initialize progress bars when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.progress-bar').forEach((element) => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".progress-bar").forEach((element) => {
     new ProgressBar(element);
   });
 });
