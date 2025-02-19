@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UrbanWood Designs</title>
+    <title>UrbanWood Designs bos anh dea</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -71,7 +71,7 @@
           </li>
           <li>
             <a
-              href="./src/pages/pages.html"
+              href="./src/pages/page.html"
               class="text-amber-900 hover:text-blue-900"
               >Pages</a
             >
@@ -421,19 +421,75 @@
           </div>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-          ☰
-        </button>
-      </div>
 
-      <!-- Mobile Menu -->
-      <ul
-        id="mobile-menu"
-        class="hidden md:hidden bg-blue-700 text-white text-center space-y-2 p-4"
-      >
-        <!-- Your mobile menu items -->
-      </ul>
+        <!-- Mobile Menu Button -->
+<button id="menu-btn" class="md:hidden fixed right-4 top-4 z-50 p-2 text-2xl text-amber-900 hover:text-blue-900 focus:outline-none">
+  ☰
+</button>
+
+<!-- Mobile Menu Overlay -->
+<div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden"></div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed top-0 right-[-100%] w-[300px] h-full bg-white z-50 transition-all duration-300 ease-in-out md:hidden overflow-y-auto">
+  <div class="p-6 space-y-6">
+    <!-- Logo -->
+    <div class="flex justify-center mb-8">
+      <img src="./src/assets/Logo.png" alt="Logo" class="h-[40px]" />
+    </div>
+
+    <!-- Main Navigation -->
+    <ul class="space-y-4">
+      <li>
+        <a href="./index.html" class="block text-amber-900 hover:text-blue-900 py-2">Home</a>
+      </li>
+      <li>
+        <a href="./src/pages/about.html" class="block text-amber-900 hover:text-blue-900 py-2">About</a>
+      </li>
+      <li>
+        <a href="./src/pages/product.html" class="block text-amber-900 hover:text-blue-900 py-2">Product</a>
+      </li>
+      <li>
+        <a href="./src/pages/page.html" class="block text-amber-900 hover:text-blue-900 py-2">Pages</a>
+      </li>
+      
+      <!-- Category Dropdown -->
+      <li class="relative">
+        <button id="mobile-category-btn" class="flex items-center justify-between w-full text-amber-900 hover:text-blue-900 py-2">
+          Category
+          <i class="fa-solid fa-chevron-down text-sm"></i>
+        </button>
+        <ul id="mobile-category-dropdown" class="hidden pl-4 space-y-2 mt-2">
+          <li><a href="../pages/table-g.html" class="block text-amber-900 hover:text-blue-900 py-2">Table</a></li>
+          <li><a href="../pages/sofa-g.html" class="block text-amber-900 hover:text-blue-900 py-2">Sofa</a></li>
+          <li><a href="../pages/blog.html" class="block text-amber-900 hover:text-blue-900 py-2">Mirror</a></li>
+          <li><a href="../pages/lamp.html" class="block text-amber-900 hover:text-blue-900 py-2">Lamp</a></li>
+          <li><a href="../pages/bed.html" class="block text-amber-900 hover:text-blue-900 py-2">Bed</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="./src/pages/blog.html" class="block text-amber-900 hover:text-blue-900 py-2">Blog</a>
+      </li>
+      <li>
+        <a href="./src/pages/contact.html" class="block text-amber-900 hover:text-blue-900 py-2">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Icons Section -->
+    <div class="flex justify-center space-x-6 pt-4 border-t">
+      <a href="#" class="text-amber-900 hover:text-blue-900 text-xl">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a href="#" class="text-amber-900 hover:text-blue-900 text-xl">
+        <i class="fa-regular fa-user"></i>
+      </a>
+      <a href="#" class="text-amber-900 hover:text-blue-900 text-xl">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </div>
+  </div>
+</div>
     </nav>
 
     <!-- herosection -->
@@ -1119,5 +1175,6 @@
 
     <!-- app.js -->
     <script src="./src/scripts/app.js"></script>
+    <script src="./src/scripts/menubtn.js"></script>
   </body>
 </html>
