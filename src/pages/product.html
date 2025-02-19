@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product bos anh</title>
+    <title>Product </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- fontfamily -->
     <link
@@ -15,9 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-
-    
-    </style>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="../scripts/about.js"></script>
     <link rel="stylesheet" href="../styles/product.css" />
   </head>
@@ -451,7 +450,6 @@
           <li><a href="../pages/bed.html" class="block text-amber-900 hover:text-blue-900 py-2">Bed</a></li>
         </ul>
       </li>
-      
       <li>
         <a href="blog.html" class="block text-amber-900 hover:text-blue-900 py-2">Blog</a>
       </li>
@@ -473,309 +471,239 @@
       </a>
     </div>
   </div>
+</nav>
+  <body>
+  
+
+    <!-- Content Section -->
+<section class="flex items-center justify-center flex-col py-12 px-4 sm:px-6 lg:px-8">
+  <!-- Heading -->
+  <div  class="text-center w-full mb-12">
+    <h1 data-aos="fade-down" class="text-4xl sm:text-5xl font-bold text-gray-900">
+      Popular <span data-aos="fade-down" data-aos-delay="200" class="text-amber-900">Furniture</span>
+    </h1>
   </div>
-    </nav>
 
-    <!-- content section -->
-    <section class="flex items-center justify-center flex-col">
-      <div class="text-center w-full">
-        <h1 class="text-5xl text-center mt-8 font-bold">
-          Popular <span class="text-amber-900">Furniture</span>
-        </h1>
+  <!-- Furniture Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <!-- Card 1: Cosy Sofa -->
+    <a data-aos="fade-up" 
+    href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p6-600x600.jpg"
+            alt="Cosy Sofa"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Cosy Sofa</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$450</p>
+            <p class="text-red-500 text-2xl font-bold">$399</p>
+          </div>
+        </div>
       </div>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[12em]">
-        <a href="">
-          <div
-            class="scroll-slide slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p6-600x600.jpg"
-                alt="Card Image"
-              />
-              <div class="flex-2 right-10 top-[40px] absolute">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Cosy Sofa</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 450
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 399</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p24-600x600.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
+    </a>
 
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Corner Loung</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 1340
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 990</p>
-              </div>
-            </div>
+    <!-- Card 2: Corner Lounge -->
+    <a data-aos="fade-up" data-aos-delay="200" href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p24-600x600.jpg"
+            alt="Corner Lounge"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p9i.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center"></h2>
-              Cosy Sofa
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 899
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 699</p>
-              </div>
-            </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Corner Lounge</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$1340</p>
+            <p class="text-red-500 text-2xl font-bold">$990</p>
           </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/clock.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Stone Clock</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 120
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 79</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/white chair.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">White Chair</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 220
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp1.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Sofa Coach</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 440</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/sofa-product.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Sofa Coach</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 440</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p23.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Gray simple Sofa
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 440</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-amber-700"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/clock.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px]">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Sofa Coach</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 440</p>
-              </div>
-            </div>
-          </div>
-        </a>
+        </div>
       </div>
-    </section>
+    </a>
+
+    <!-- Card 3: Modern Sofa -->
+    <a data-aos="fade-up" data-aos-delay="300" href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p9i.jpg"
+            alt="Modern Sofa"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Modern Sofa</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$899</p>
+            <p class="text-red-500 text-2xl font-bold">$699</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 4: Stone Clock -->
+    <a data-aos="fade-up" data-aos-delay="400" href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="../images/clock.jpg"
+            alt="Stone Clock"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Stone Clock</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$120</p>
+            <p class="text-red-500 text-2xl font-bold">$79</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 5: White Chair -->
+    <a data-aos="fade-up"  href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="../images/white chair.jpg"
+            alt="White Chair"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">White Chair</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$220</p>
+            <p class="text-red-500 text-2xl font-bold">$199</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 6: Sofa Coach -->
+    <a data-aos="fade-up" data-aos-delay="200" href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="../images/lamp1.jpg"
+            alt="Sofa Coach"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Sofa Coach</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$550</p>
+            <p class="text-red-500 text-2xl font-bold">$440</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 7: Gray Simple Sofa -->
+    <a data-aos="fade-up" data-aos-delay="300" href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="https://xtratheme.com/elementor/furniture-shop-2/wp-content/uploads/sites/112/2019/09/p23.jpg"
+            alt="Gray Simple Sofa"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Gray Simple Sofa</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$550</p>
+            <p class="text-red-500 text-2xl font-bold">$440</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 8: Stone Clock -->
+    <a data-aos="fade-up" data-aos-delay="400" href="#" class="group">
+      <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-4">
+          <img
+            class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+            src="../images/clock.jpg"
+            alt="Stone Clock"
+          />
+          <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Stone Clock</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <p class="text-gray-400 text-xl line-through">$120</p>
+            <p class="text-red-500 text-2xl font-bold">$79</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
 
     <!-- footer -->
     <div
@@ -892,5 +820,8 @@
     <script src="../scripts/menu.js"></script>
     <script src="../scripts/menubtn.js"></script>
     <script src="../scripts/app.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="../scripts/aos.js"></script>
   </body>
 </html>

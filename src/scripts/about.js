@@ -97,3 +97,44 @@ document.addEventListener("DOMContentLoaded", () => {
     new ProgressBar(element);
   });
 });
+
+// Number animation
+document.addEventListener("DOMContentLoaded", function () {
+  const numberElements = document.querySelectorAll("[data-target]");
+  const numbersSection = document.getElementById("numbersSection");
+  let hasAnimated = false;
+
+  function animateValue(element, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      const currentValue = Math.floor(progress * (end - start) + start);
+      element.textContent = currentValue;
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          hasAnimated = true;
+          numberElements.forEach((element) => {
+            const target = parseInt(element.getAttribute("data-target"));
+            animateValue(element, 0, target, 2000);
+          });
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0.5,
+    }
+  );
+
+  observer.observe(numbersSection);
+});
