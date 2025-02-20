@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
+    <title>mirror</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- fontfamily -->
     <link
@@ -16,7 +16,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 
     <style>
       body {
@@ -459,28 +461,51 @@
   </div>
     </nav>
 
-    <!-- product section -->
-    <section class="flex items-center justify-center flex-col">
-      <div class="text-start w-full">
-        <h1
-          class="text-5xl mt-8 font-bold hover:text-amber-200 text-amber-900 ms-6"
-        >
-          Lamp
-        </h1>
-        <p class="mt-4 ms-6">Here product all of Lamp</p>
-      </div>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[12em]">
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-1.jpg"
-                alt="Card Image"
-              />
-              <div class="flex-2 right-10 top-[40px] absolute text-amber-900">
+<!-- Mirror Collection Section -->
+<section class="flex items-center justify-center flex-col py-12 px-4 sm:px-6 lg:px-8">
+  <!-- Heading -->
+  <div class="text-center w-full mb-12">
+    <h1 data-aos="fade-down" class="text-4xl sm:text-5xl font-bold text-gray-900">
+      <span data-aos="fade-down" data-aos-delay="200" class="text-amber-900">
+        Mirror Collection
+      </span>
+    </h1>
+  </div>
+
+  <div id="mirror-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+    <!-- Products will be inserted here -->
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+
+    const mirrors = [
+      { name: "Classic Wall Mirror", oldPrice: 120, newPrice: 95, img: "m-1.jpg" },
+      { name: "Vintage Gold Mirror", oldPrice: 180, newPrice: 145, img: "m-2.jpg" },
+      { name: "Minimalist Round Mirror", oldPrice: 150, newPrice: 125, img: "m-3.jpg" },
+      { name: "Ornate Frame Mirror", oldPrice: 200, newPrice: 175, img: "m-4.jpg" },
+      { name: "Rustic Wooden Mirror", oldPrice: 160, newPrice: 135, img: "m-5.jpg" },
+      { name: "Modern LED Mirror", oldPrice: 220, newPrice: 190, img: "m-6.jpg" },
+      { name: "Art Deco Mirror", oldPrice: 250, newPrice: 210, img: "m-7.jpg" },
+      { name: "Frameless Mirror", oldPrice: 140, newPrice: 115, img: "m-8.jpg" },
+      { name: "Oval Vanity Mirror", oldPrice: 175, newPrice: 140, img: "m-9.jpg" },
+      { name: "Antique Silver Mirror", oldPrice: 230, newPrice: 195, img: "m-10.jpg" },
+      { name: "Geometric Wall Mirror", oldPrice: 190, newPrice: 160, img: "m-11.jpg" },
+      { name: "Elegant Dressing Mirror", oldPrice: 260, newPrice: 220, img: "m-12.jpg" },
+    ];
+
+    const gridContainer = document.getElementById("mirror-grid");
+
+    mirrors.forEach((mirror) => {
+      gridContainer.innerHTML += `
+        <a data-aos="fade-up" href="#" class="group">
+          <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="p-4">
+              <img class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                   src="../images/${mirror.img}" alt="${mirror.name}" />
+              <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -488,384 +513,20 @@
                 <i class="fa-solid fa-star"></i>
               </div>
             </div>
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Modern Lamp</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 230
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 210</p>
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">${mirror.name}</h2>
+              <div class="flex justify-center items-center space-x-4">
+                <p class="text-gray-400 text-xl line-through">$${mirror.oldPrice}</p>
+                <p class="text-red-500 text-2xl font-bold">$${mirror.newPrice}</p>
               </div>
             </div>
           </div>
         </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-2.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
+      `;
+    });
+  });
+</script>
 
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Chair Side Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 415
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 305</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-3.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Best Modern</h2>
-
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 210
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 205</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-4.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Dest Lamp</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 150
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 129</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-5.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Bedside Lamp</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 50
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 40</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-6.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Table Lamp</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 230
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 216</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-7.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Lighting</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 150
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 120</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-8.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Industrial Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 480
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 435</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-9.9.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Ashley AmasaiTable
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 564
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 522</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-10.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Ashley Darlita Lamp
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 528
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 369</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-11.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Glass Table Lamp
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 490
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 389</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/lamp-12.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center"> Macawi Lamp</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 420
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 376</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
 
     <!-- footer -->
     <div
@@ -882,7 +543,7 @@
               <div class="flex items-center justify-center">
                 <div>
                   <img
-                    src="./src/assets/Logo.png"
+                    src="../assets/logo.png"
                     alt="logo"
                     class="w-[5rem] h-[5rem] cursor-pointer"
                   />
@@ -982,5 +643,6 @@
 
     <script src="../scripts/app.js"></script>
     <script src="../scripts/menubtn.js"></script>
+    <script src="../scripts/aos.js"></script>
   </body>
 </html>

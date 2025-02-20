@@ -22,6 +22,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <style>
       body {
@@ -441,7 +444,7 @@
   </div>
     </nav>
     <section class=" px-4 py-16">
-      <div class="max-w-7xl mx-auto bg-white min-h-[700px] rounded-3xl shadow-xl p-8 transform hover:shadow-2xl transition-all duration-300">
+      <div class="max-w-7xl mx-auto  min-h-[700px] rounded-3xl  p-8 transform hover:shadow-2xl transition-all duration-300">
         <h1 class="p-8 text-4xl font-bold text-center text-amber-900 relative">
           Contact 
           <i class="fa-regular fa-user ml-2 text-amber-900 animate-bounce cursor-pointer"></i>
@@ -451,7 +454,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1400px] mx-auto">
           <!-- Form Section -->
           <div class="w-full bg-gradient-to-br from-stone-300 to-stone-400 rounded-2xl p-8 shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-            <form class="space-y-6">
+            <form data-aos="fade-right" class="space-y-6">
               <div class="space-y-2">
                 <label for="email" class="text-sm font-medium text-gray-700">Email</label>
                 <input
@@ -507,7 +510,7 @@
           </div>
     
           <!-- Map Section -->
-          <div class="w-full bg-gradient-to-br from-stone-300 to-stone-400 rounded-2xl h-[450px] lg:h-full overflow-hidden shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+          <div  class="w-full bg-gradient-to-br from-stone-300 to-stone-400 rounded-2xl h-[450px] lg:h-full overflow-hidden shadow-lg transform hover:scale-[1.02] transition-all duration-300">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31273.799922154783!2d104.86802065293061!3d11.53571177355578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310950501ca2962d%3A0xef3210236f701e2e!2sSangkat%20Stueng%20Mean%20Chey%2C%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1739494599455!5m2!1sen!2skh"
               class="w-full h-full rounded-2xl transform hover:scale-105 transition-all duration-500"
@@ -515,6 +518,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              data-aos="fade-left"
             ></iframe>
           </div>
         </div>
@@ -535,7 +539,7 @@
             <div class="flex items-center justify-center">
               <div>
                 <img
-                  src="./src/assets/Logo.png"
+                  src="../assets/logo.png"
                   alt="logo"
                   class="w-[5rem] h-[5rem] cursor-pointer"
                 />
@@ -636,5 +640,6 @@
     <script src="../scripts/about.js"></script>
     <script src="../scripts/menubtn.js"></script>
     <script src="../scripts/app.js"></script>
+    <script src="../scripts/aos.js"></script>
   </body>
 </html>

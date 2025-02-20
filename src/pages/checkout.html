@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UrbanWood Designs</title>
+    <title>Checkout</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -32,29 +32,23 @@
           <li>
             <a
               class="text-amber-900 hover:text-blue-900"
-              href="./index.html"
+              href="/index.html"
               class="text-amber-900 hover:text-blue-900"
               >Home</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/about.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="about.html" class="text-amber-900 hover:text-blue-900"
               >About</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/product.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="product.html" class="text-amber-900 hover:text-blue-900"
               >Product</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/pages.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="pages.html" class="text-amber-900 hover:text-blue-900"
               >Pages</a
             >
           </li>
@@ -65,52 +59,42 @@
             >
               <li>
                 <a
-                  href="../pages/table-g.html"
+                  href="table-g.html"
                   class="block px-4 py-2 hover:text-blue-900"
                   >Table</a
                 >
               </li>
               <li>
                 <a
-                  href="../pages/sofa-g.html"
+                  href="sofa-g.html"
                   class="block px-4 py-2 hover:text-blue-900"
                   >Sofa</a
                 >
               </li>
               <li>
-                <a
-                  href="../pages/blog.html"
-                  class="block px-4 py-2 hover:text-blue-900"
+                <a href="blog.html" class="block px-4 py-2 hover:text-blue-900"
                   >Mirror</a
                 >
               </li>
               <li>
-                <a
-                  href="../pages/lamp.html"
-                  class="block px-4 py-2 hover:text-blue-900"
+                <a href="lamp.html" class="block px-4 py-2 hover:text-blue-900"
                   >Lamp</a
                 >
               </li>
               <li>
-                <a
-                  href="../pages/bed.html"
-                  class="block px-4 py-2 hover:text-blue-900"
+                <a href="bed.html" class="block px-4 py-2 hover:text-blue-900"
                   >Bed</a
                 >
               </li>
             </ul>
           </li>
           <li>
-            <a
-              href="./src/pages/blog.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="blog.html" class="text-amber-900 hover:text-blue-900"
               >Blog</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/contact.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="contact.html" class="text-amber-900 hover:text-blue-900"
               >Contact</a
             >
           </li>
@@ -418,137 +402,98 @@
       </ul>
     </nav>
 
-    <section class="my-[10em]">
+    <section class="my-16">
       <!-- Progress Steps -->
       <div
-        class="max-w-3xl mx-auto mb-8 flex items-center justify-center gap-2 text-3xl"
+        class="max-w-4xl mx-auto mb-8 flex items-center justify-center gap-4 text-lg font-medium"
       >
-        <a href="#" class="progress-step current" data-step="cart">
-          <span class="text-gray-900 hover:text-amber-700 cursor-pointer"
-            >Shopping Cart</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="checkout">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Checkout Detail</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="complete">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Order complete</span
-          >
-        </a>
+        <a href="./cart.html" class="text-gray-900 hover:text-amber-700"
+          >Shopping Cart</a
+        >
+        <span class="text-gray-400">&rarr;</span>
+        <a href="./checkout.html" class="text-gray-900 hover:text-amber-700"
+          >Checkout Detail</a
+        >
+        <span class="text-gray-400">&rarr;</span>
+        <a href="#" class="text-gray-400 hover:text-amber-700"
+          >Order Complete</a
+        >
       </div>
 
-      <div class="max-w-3xl mx-auto flex flex-col lg:flex-row gap-6">
-        <!-- Cart Items -->
-        <div class="flex-grow space-y-4" id="cartItems">
-          <!-- Cart items will be dynamically populated -->
+      <div class="max-w-4xl mx-auto flex flex-col lg:flex-row gap-8">
+        <!-- Checkout Form -->
+        <div class="flex-grow bg-gray-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Billing Details</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="p-3 border rounded-md w-full"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="p-3 border rounded-md w-full"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="p-3 border rounded-md w-full"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="p-3 border rounded-md w-full"
+            />
+            <select class="p-3 border rounded-md w-full">
+              <option>Choose Country</option>
+            </select>
+          </div>
+
+          <h3 class="text-xl font-semibold mt-6 mb-4">Payment Methods</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="Cardholder Name"
+              class="p-3 border rounded-md w-full"
+            />
+            <input
+              type="text"
+              placeholder="Card Number"
+              class="p-3 border rounded-md w-full"
+            />
+            <input
+              type="text"
+              placeholder="MM/DD/YYYY"
+              class="p-3 border rounded-md w-full"
+            />
+            <input
+              type="text"
+              placeholder="CVC Code"
+              class="p-3 border rounded-md w-full"
+            />
+          </div>
         </div>
 
-        <!-- Cart Totals -->
-        <div class="w-full lg:w-72">
-          <div class="bg-white rounded-lg p-4 shadow">
-            <h3 class="text-lg font-medium mb-4">Cart totals</h3>
-            <div class="space-y-2 mb-4">
-              <div class="flex justify-between">
-                <span>Subtotal</span>
-                <span id="subtotal">$0</span>
-              </div>
-              <div class="flex justify-between font-medium">
-                <span>Total</span>
-                <span id="total">$0</span>
-              </div>
+        <!-- Order Summary -->
+        <div class="w-full lg:w-1/3 bg-gray-200 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Cart Totals</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex justify-between">
+              <span>Subtotal</span>
+              <span>$2088</span>
             </div>
-            <button
-              class="w-full bg-amber-700 text-white py-3 rounded-lg mb-2 hover:bg-amber-900"
-              id="checkoutBtn"
-            >
-              Proceed to checkout
-            </button>
-            <button
-              class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
-              id="continueShoppingBtn"
-            >
-              Continue Shopping
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Progress Steps -->
-      <div
-        class="max-w-3xl mx-auto mb-8 flex items-center justify-center gap-2 text-3xl"
-      >
-        <a href="#" class="progress-step current" data-step="cart">
-          <span class="text-gray-900 hover:text-amber-700 cursor-pointer"
-            >Shopping Cart</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="checkout">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Checkout Detail</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="complete">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Order complete</span
-          >
-        </a>
-      </div>
-
-      <!-- Cart Content -->
-      <div id="cartContent" class="max-w-3xl mx-auto">
-        <div class="flex flex-col lg:flex-row gap-6">
-          <!-- Cart Items -->
-          <div class="flex-grow space-y-4" id="cartItems">
-            <!-- Cart items will be dynamically populated -->
-          </div>
-
-          <!-- Cart Totals -->
-          <div class="w-full lg:w-72">
-            <div class="bg-white rounded-lg p-4 shadow">
-              <h3 class="text-lg font-medium mb-4">Cart totals</h3>
-              <div class="space-y-2 mb-4">
-                <div class="flex justify-between">
-                  <span>Subtotal</span>
-                  <span id="subtotal">$0</span>
-                </div>
-                <div class="flex justify-between font-medium">
-                  <span>Total</span>
-                  <span id="total">$0</span>
-                </div>
-              </div>
-              <button
-                class="w-full bg-amber-700 text-white py-3 rounded-lg mb-2 hover:bg-amber-900"
-                id="checkoutBtn"
-              >
-                Proceed to checkout
-              </button>
-              <button
-                class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
-                id="continueShoppingBtn"
-              >
-                Continue Shopping
-              </button>
+            <div class="flex justify-between font-medium">
+              <span>Total</span>
+              <span>$2088</span>
             </div>
           </div>
+          <button
+            class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
+          >
+            Place Order
+          </button>
         </div>
-      </div>
-
-      <!-- Checkout Content -->
-      <div id="checkoutContent" class="max-w-3xl mx-auto hidden">
-        <!-- Checkout form and order summary -->
-      </div>
-
-      <!-- Order Complete Content -->
-      <div id="orderCompleteContent" class="max-w-3xl mx-auto hidden">
-        <h2 class="text-2xl font-medium mb-4">Order Complete</h2>
-        <p>Thank you for your purchase!</p>
       </div>
     </section>
 

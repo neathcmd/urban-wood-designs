@@ -32,29 +32,23 @@
           <li>
             <a
               class="text-amber-900 hover:text-blue-900"
-              href="./index.html"
+              href="/index.html"
               class="text-amber-900 hover:text-blue-900"
               >Home</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/about.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="about.html" class="text-amber-900 hover:text-blue-900"
               >About</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/product.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="product.html" class="text-amber-900 hover:text-blue-900"
               >Product</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/pages.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="pages.html" class="text-amber-900 hover:text-blue-900"
               >Pages</a
             >
           </li>
@@ -65,52 +59,42 @@
             >
               <li>
                 <a
-                  href="../pages/table-g.html"
+                  href="table-g.html"
                   class="block px-4 py-2 hover:text-blue-900"
                   >Table</a
                 >
               </li>
               <li>
                 <a
-                  href="../pages/sofa-g.html"
+                  href="sofa-g.html"
                   class="block px-4 py-2 hover:text-blue-900"
                   >Sofa</a
                 >
               </li>
               <li>
-                <a
-                  href="../pages/blog.html"
-                  class="block px-4 py-2 hover:text-blue-900"
+                <a href="blog.html" class="block px-4 py-2 hover:text-blue-900"
                   >Mirror</a
                 >
               </li>
               <li>
-                <a
-                  href="../pages/lamp.html"
-                  class="block px-4 py-2 hover:text-blue-900"
+                <a href="lamp.html" class="block px-4 py-2 hover:text-blue-900"
                   >Lamp</a
                 >
               </li>
               <li>
-                <a
-                  href="../pages/bed.html"
-                  class="block px-4 py-2 hover:text-blue-900"
+                <a href="bed.html" class="block px-4 py-2 hover:text-blue-900"
                   >Bed</a
                 >
               </li>
             </ul>
           </li>
           <li>
-            <a
-              href="./src/pages/blog.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="blog.html" class="text-amber-900 hover:text-blue-900"
               >Blog</a
             >
           </li>
           <li>
-            <a
-              href="./src/pages/contact.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="contact.html" class="text-amber-900 hover:text-blue-900"
               >Contact</a
             >
           </li>
@@ -418,28 +402,22 @@
       </ul>
     </nav>
 
-    <section class="my-[10em]">
+    <section class="my-16">
       <!-- Progress Steps -->
       <div
-        class="max-w-3xl mx-auto mb-8 flex items-center justify-center gap-2 text-3xl"
+        class="max-w-4xl mx-auto mb-8 flex items-center justify-center gap-4 text-lg font-medium"
       >
-        <a href="#" class="progress-step current" data-step="cart">
-          <span class="text-gray-900 hover:text-amber-700 cursor-pointer"
-            >Shopping Cart</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="checkout">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Checkout Detail</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="complete">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Order complete</span
-          >
-        </a>
+        <a href="cart.html" class="text-gray-900 hover:text-amber-700"
+          >Shopping Cart</a
+        >
+        <span class="text-gray-400">&rarr;</span>
+        <a href="checkout.html" class="text-gray-900 hover:text-amber-700"
+          >Checkout Detail</a
+        >
+        <span class="text-gray-400">&rarr;</span>
+        <a href="#" class="text-gray-400 hover:text-amber-700"
+          >Order Complete</a
+        >
       </div>
 
       <div class="max-w-3xl mx-auto flex flex-col lg:flex-row gap-6">
@@ -448,107 +426,47 @@
           <!-- Cart items will be dynamically populated -->
         </div>
 
-        <!-- Cart Totals -->
-        <div class="w-full lg:w-72">
-          <div class="bg-white rounded-lg p-4 shadow">
-            <h3 class="text-lg font-medium mb-4">Cart totals</h3>
-            <div class="space-y-2 mb-4">
-              <div class="flex justify-between">
-                <span>Subtotal</span>
-                <span id="subtotal">$0</span>
-              </div>
-              <div class="flex justify-between font-medium">
-                <span>Total</span>
-                <span id="total">$0</span>
-              </div>
+        <!-- Cart Content -->
+        <div id="cartContent" class="max-w-3xl mx-auto">
+          <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Cart Items -->
+            <div class="flex-grow space-y-4" id="cartItems">
+              <!-- Cart items will be dynamically populated -->
             </div>
-            <button
-              class="w-full bg-amber-700 text-white py-3 rounded-lg mb-2 hover:bg-amber-900"
-              id="checkoutBtn"
-            >
-              Proceed to checkout
-            </button>
-            <button
-              class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
-              id="continueShoppingBtn"
-            >
-              Continue Shopping
-            </button>
-          </div>
-        </div>
-      </div>
 
-      <!-- Progress Steps -->
-      <div
-        class="max-w-3xl mx-auto mb-8 flex items-center justify-center gap-2 text-3xl"
-      >
-        <a href="#" class="progress-step current" data-step="cart">
-          <span class="text-gray-900 hover:text-amber-700 cursor-pointer"
-            >Shopping Cart</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="checkout">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Checkout Detail</span
-          >
-        </a>
-        <span class="text-gray-400">→</span>
-        <a href="#" class="progress-step" data-step="complete">
-          <span class="text-gray-400 hover:text-amber-700 cursor-pointer"
-            >Order complete</span
-          >
-        </a>
-      </div>
-
-      <!-- Cart Content -->
-      <div id="cartContent" class="max-w-3xl mx-auto">
-        <div class="flex flex-col lg:flex-row gap-6">
-          <!-- Cart Items -->
-          <div class="flex-grow space-y-4" id="cartItems">
-            <!-- Cart items will be dynamically populated -->
-          </div>
-
-          <!-- Cart Totals -->
-          <div class="w-full lg:w-72">
-            <div class="bg-white rounded-lg p-4 shadow">
-              <h3 class="text-lg font-medium mb-4">Cart totals</h3>
-              <div class="space-y-2 mb-4">
-                <div class="flex justify-between">
-                  <span>Subtotal</span>
-                  <span id="subtotal">$0</span>
+            <!-- Cart Totals -->
+            <div class="w-full lg:w-72">
+              <div class="bg-white rounded-lg p-4 shadow">
+                <h3 class="text-lg font-medium mb-4">Cart totals</h3>
+                <div class="space-y-2 mb-4">
+                  <div class="flex justify-between">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0</span>
+                  </div>
+                  <div class="flex justify-between font-medium">
+                    <span>Total</span>
+                    <span id="total">$0</span>
+                  </div>
                 </div>
-                <div class="flex justify-between font-medium">
-                  <span>Total</span>
-                  <span id="total">$0</span>
-                </div>
+                <a href="./checkout.html">
+                  <button
+                    class="w-full bg-amber-700 text-white py-3 rounded-lg mb-2 hover:bg-amber-900"
+                  >
+                    Proceed to checkout
+                  </button>
+                </a>
+                <a href="./product.html">
+                  <button
+                    class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
+                    id="continueShoppingBtn"
+                  >
+                    Continue Shopping
+                  </button>
+                </a>
               </div>
-              <button
-                class="w-full bg-amber-700 text-white py-3 rounded-lg mb-2 hover:bg-amber-900"
-                id="checkoutBtn"
-              >
-                Proceed to checkout
-              </button>
-              <button
-                class="w-full bg-amber-700 text-white py-3 rounded-lg hover:bg-amber-900"
-                id="continueShoppingBtn"
-              >
-                Continue Shopping
-              </button>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Checkout Content -->
-      <div id="checkoutContent" class="max-w-3xl mx-auto hidden">
-        <!-- Checkout form and order summary -->
-      </div>
-
-      <!-- Order Complete Content -->
-      <div id="orderCompleteContent" class="max-w-3xl mx-auto hidden">
-        <h2 class="text-2xl font-medium mb-4">Order Complete</h2>
-        <p>Thank you for your purchase!</p>
       </div>
     </section>
 

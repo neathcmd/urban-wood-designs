@@ -15,8 +15,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <!-- aos -->
+    <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
       body {
@@ -35,9 +36,7 @@
 
         <ul class="hidden md:flex space-x-6">
           <li>
-            <a
-              href="/team1-Furniture-company/index.html"
-              class="text-amber-900 hover:text-blue-900"
+            <a href="/index.html" class="text-amber-900 hover:text-blue-900"
               >Home</a
             >
           </li>
@@ -190,410 +189,165 @@
     </nav>
 
     <!-- product section -->
-    <section class="flex items-center justify-center flex-col">
-      <div class="text-start w-full">
+    <section
+      class="flex items-center justify-center flex-col py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <!-- Heading -->
+      <div class="text-center w-full mb-12">
         <h1
-          class="text-5xl mt-8 font-bold hover:text-amber-200 text-amber-900 ms-6"
+          data-aos="fade-down"
+          class="text-4xl sm:text-5xl font-bold text-gray-900"
         >
-          Bed
+          <span
+            data-aos="fade-down"
+            data-aos-delay="200"
+            class="text-amber-900"
+          >
+            Bed Collection
+          </span>
         </h1>
-        <p class="mt-4 ms-6">Here product all of Bed</p>
       </div>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[12em]">
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed-1.jpg"
-                alt="Card Image"
-              />
-              <div class="flex-2 right-10 top-[40px] absolute text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Bed Buying Guide
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 1150
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 1010</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed2.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
 
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">King size Bed</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 2550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 2350</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed3.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Cute Kid Bed</h2>
-
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 1250
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 1500</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed4.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Kids Bed</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 3200
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 3100</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed5.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Kids bed design
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 1200
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 1150</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed6.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Kids bed design
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 1550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 1350</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed7.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Wooden Queen</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 5210
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 5115</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed8.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Lavinia Storage Bed
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 2350
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 2300</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed9.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Floating Bed</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 4710
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 4508</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed10.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Luisa Bed</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 997
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 995</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed11.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Tulum Kids Bed</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 815
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 800</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/bed12.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Euro solid Bed</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 510
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 431</p>
-              </div>
-            </div>
-          </div>
-        </a>
+      <div id="bed-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+        <!-- Products will be inserted here -->
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+
+        const bedData = [
+          {
+            name: "Bed Buying Guide",
+            original_price: "$1150",
+            discounted_price: "$1010",
+            image: "bed1.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "King size Bed",
+            original_price: "$2550",
+            discounted_price: "$2350",
+            image: "bed2.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Cute Kid Bed",
+            original_price: "$1250",
+            discounted_price: "$1500",
+            image: "bed3.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Kids Bed",
+            original_price: "$3200",
+            discounted_price: "$3100",
+            image: "bed4.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Kids bed design",
+            original_price: "$1200",
+            discounted_price: "$1150",
+            image: "bed5.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Kids bed design",
+            original_price: "$1550",
+            discounted_price: "$1350",
+            image: "bed6.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Wooden Queen",
+            original_price: "$5210",
+            discounted_price: "$5115",
+            image: "bed7.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Lavinia Storage Bed",
+            original_price: "$2350",
+            discounted_price: "$2300",
+            image: "bed8.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Floating Bed",
+            original_price: "$4710",
+            discounted_price: "$4508",
+            image: "bed9.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Luisa Bed",
+            original_price: "$997",
+            discounted_price: "$995",
+            image: "bed10.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Tulum Kids Bed",
+            original_price: "$815",
+            discounted_price: "$800",
+            image: "bed11.jpg",
+            rating: 5,
+            link: "#",
+          },
+          {
+            name: "Euro solid Bed",
+            original_price: "$510",
+            discounted_price: "$431",
+            image: "bed12.jpg",
+            rating: 5,
+            link: "#",
+          },
+        ];
+
+        const gridContainer = document.getElementById("bed-grid");
+
+        bedData.forEach((bed) => {
+          gridContainer.innerHTML += `
+            <a data-aos="fade-up" href="${bed.link}" class="group">
+              <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="p-4">
+                  <img class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                       src="../images/${bed.image}" alt="${bed.name}" />
+                  <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+                    ${"★".repeat(bed.rating)}
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">${
+                    bed.name
+                  }</h2>
+                  <div class="flex justify-center items-center space-x-4">
+                    <p class="text-gray-400 text-xl line-through">${
+                      bed.original_price
+                    }</p>
+                    <p class="text-red-500 text-2xl font-bold">${
+                      bed.discounted_price
+                    }</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          `;
+        });
+      });
+    </script>
 
     <!-- footer -->
     <div
@@ -610,7 +364,7 @@
               <div class="flex items-center justify-center">
                 <div>
                   <img
-                    src="./src/assets/Logo.png"
+                    src="../assets/logo.png"
                     alt="logo"
                     class="w-[5rem] h-[5rem] cursor-pointer"
                   />
