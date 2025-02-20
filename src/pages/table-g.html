@@ -409,418 +409,130 @@
         <!-- Your mobile menu items -->
       </ul>
     </nav>
-
     <!-- content section -->
-    <section class="flex items-center justify-center flex-col">
-      <div class="text-start w-full">
+    <section
+      class="flex items-center justify-center flex-col py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <!-- Heading -->
+      <div class="text-center w-full mb-12">
         <h1
-          class="text-5xl mt-8 font-bold hover:text-amber-200 text-amber-900 ms-6"
+          data-aos="fade-down"
+          class="text-4xl sm:text-5xl font-bold text-gray-900"
         >
           Table
+          <span data-aos="fade-down" data-aos-delay="200" class="text-amber-900"
+            >Our table collection</span
+          >
         </h1>
-        <p class="mt-4 ms-6">Here product all of Table</p>
       </div>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[12em]">
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table1.jpg"
-                alt="Card Image"
-              />
-              <div class="flex-2 right-10 top-[40px] absolute text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Occasional Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 430
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 310</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table2.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+        <script>
+          const tables = [
+            {
+              name: "Occasional Table",
+              oldPrice: 430,
+              newPrice: 310,
+              img: "table1.jpg",
+            },
+            {
+              name: "Chair Side Table",
+              oldPrice: 415,
+              newPrice: 305,
+              img: "table2.jpg",
+            },
+            {
+              name: "Fabric Table",
+              oldPrice: 715,
+              newPrice: 699,
+              img: "table3.jpg",
+            },
+            {
+              name: "Road End Table",
+              oldPrice: 510,
+              newPrice: 431,
+              img: "table4.jpg",
+            },
+            {
+              name: "Rectangular Table",
+              oldPrice: 450,
+              newPrice: 389,
+              img: "table5.jpg",
+            },
+            {
+              name: "Emily Flared",
+              oldPrice: 410,
+              newPrice: 389,
+              img: "table6.jpg",
+            },
+            {
+              name: "Chairside End Table",
+              oldPrice: 450,
+              newPrice: 390,
+              img: "table7.jpg",
+            },
+            {
+              name: "Cosy Table",
+              oldPrice: 430,
+              newPrice: 396,
+              img: "table8.jpg",
+            },
+            {
+              name: "Lake House Table",
+              oldPrice: 550,
+              newPrice: 420,
+              img: "table9.jpg",
+            },
+            {
+              name: "Chairside Table",
+              oldPrice: 470,
+              newPrice: 385,
+              img: "table10.jpg",
+            },
+            {
+              name: "Occasional Table",
+              oldPrice: 450,
+              newPrice: 399,
+              img: "table11.jpg",
+            },
+            {
+              name: "Dockside Table",
+              oldPrice: 420,
+              newPrice: 390,
+              img: "table12.jpg",
+            },
+          ];
 
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Chair Side Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 415
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 305</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table3.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Fabric Table</h2>
-
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 715
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 699</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table4.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Road End Table</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 510
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 431</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table5.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                 Rectangular Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 450
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 389</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table6.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Emily Flared</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 410
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 389</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table7.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                 Chairside End Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 450
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 390</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table8.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">Cosy Table</h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 430
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 396</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table9.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Lake House Table 
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 550
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 420</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table10.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                 Chairside Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 470
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 385</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table11.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Occasional Table
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 450
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 399</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="scroll-slide relative max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 mt-6 ms-6 hover:bg-gray-300"
-          >
-            <div class="p-2">
-              <img
-                class="w-full rounded-xl h-64 hover:brightness-75 transition duration-300"
-                src="../images/table12.jpg"
-                alt="Card Image"
-              />
-              <div class="absolute flex-2 right-10 top-[40px] text-amber-900">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-            <div class="py-4">
-              <h2 class="text-3xl text-gray-800 text-center">
-                Dockside Table 
-              </h2>
-              <div class="flex">
-                <p
-                  class="text-blue-500 p-4 flex-1 text-decoration: line-through text-3xl"
-                >
-                  $ 470
-                </p>
-                <p class="text-red-500 p-4 flex-2 text-3xl">$ 388</p>
-              </div>
-            </div>
-          </div>
-        </a>
+          tables.forEach((table) => {
+            document.write(`
+              <a data-aos="fade-up" href="#" class="group">
+                  <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-4">
+                      <img
+                        class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                        src="../images/${table.img}"
+                        alt="${table.name}"
+                      />
+                      <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="p-6">
+                      <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">${table.name}</h2>
+                      <div class="flex justify-center items-center space-x-4">
+                        <p class="text-gray-400 text-xl line-through">$${table.oldPrice}</p>
+                        <p class="text-red-500 text-2xl font-bold">$${table.newPrice}</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+            `);
+          });
+        </script>
       </div>
     </section>
 
@@ -937,5 +649,8 @@
       </div>
     </div>
     <script src="../scripts/menu.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../scripts/aos.js"></script>
   </body>
 </html>

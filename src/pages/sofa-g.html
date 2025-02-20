@@ -411,7 +411,7 @@
     </nav>
 
     <!-- product section -->
-    <section class="flex items-center justify-center flex-col">
+    <!-- <section class="flex items-center justify-center flex-col">
       <div class="text-start w-full">
         <h1
           class="text-5xl mt-8 font-bold hover:text-amber-200 text-amber-900 ms-6"
@@ -811,7 +811,109 @@
           </div>
         </a>
       </div>
+    </section> -->
+    <section
+      class="flex items-center justify-center flex-col py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <!-- Heading -->
+      <div class="text-center w-full mb-12">
+        <h1
+          data-aos="fade-down"
+          class="text-4xl sm:text-5xl font-bold text-gray-900"
+        >
+          Sofa
+          <span
+            data-aos="fade-down"
+            data-aos-delay="200"
+            class="text-amber-900"
+          >
+            Our Sofa Collection
+          </span>
+        </h1>
+      </div>
+
+      <div
+        id="sofa-container"
+        class="grid sm:grid-cols-2 md:grid-cols-3 gap-12"
+      ></div>
     </section>
+
+    <script>
+      const sofas = [
+        { name: "Sofa Couch", oldPrice: 550, newPrice: 440, img: "sofa-1.jpg" },
+        { name: "Puffy Sofa", oldPrice: 780, newPrice: 615, img: "sofa2.jpg" },
+        { name: "Fabric Sofa", oldPrice: 715, newPrice: 699, img: "sofa3.jpg" },
+        {
+          name: "Seater Sofa",
+          oldPrice: 512,
+          newPrice: 469,
+          img: "sofa4-4.jpg",
+        },
+        { name: "Coured Sofa", oldPrice: 997, newPrice: 950, img: "sofa4.jpg" },
+        {
+          name: "Emily Flared",
+          oldPrice: 410,
+          newPrice: 389,
+          img: "sofa6.jpg",
+        },
+        { name: "Oscar Sofa", oldPrice: 550, newPrice: 440, img: "sofa7.jpg" },
+        {
+          name: "Bubble Boule Sofa",
+          oldPrice: 780,
+          newPrice: 615,
+          img: "sofa8.jpg",
+        },
+        { name: "Lazy Sofa", oldPrice: 715, newPrice: 699, img: "sofa9.jpg" },
+        {
+          name: "Leather Sofa",
+          oldPrice: 450,
+          newPrice: 399,
+          img: "sofa10.jpg",
+        },
+        { name: "Sofa Sets", oldPrice: 450, newPrice: 399, img: "sofa11.jpg" },
+        {
+          name: "Traditional Sofa",
+          oldPrice: 450,
+          newPrice: 399,
+          img: "sofa12.jpg",
+        },
+      ];
+
+      const sofaContainer = document.getElementById("sofa-container");
+
+      sofas.forEach((sofa) => {
+        const sofaCard = document.createElement("a");
+        sofaCard.href = "#";
+        sofaCard.setAttribute("data-aos", "fade-up");
+        sofaCard.classList.add("group");
+
+        sofaCard.innerHTML = `
+          <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="p-4">
+              <img class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                   src="images/${sofa.img}" 
+                   alt="${sofa.name}" />
+              <div class="absolute top-4 right-4 flex space-x-1 text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">${sofa.name}</h2>
+              <div class="flex justify-center items-center space-x-4">
+                <p class="text-gray-400 text-xl line-through">$${sofa.oldPrice}</p>
+                <p class="text-red-500 text-2xl font-bold">$${sofa.newPrice}</p>
+              </div>
+            </div>
+          </div>
+        `;
+
+        sofaContainer.appendChild(sofaCard);
+      });
+    </script>
 
     <div
       class="bg-url('../assets/footer-bg.jpg') bg-cover bg-center min-h-screen flex flex-col"
